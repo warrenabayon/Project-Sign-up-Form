@@ -1,0 +1,130 @@
+/* start here */
+* {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100svh;
+  > div {
+    flex: 1 auto;
+  }
+  .col-left {
+    
+    width: 38%;
+    background-image: url('../images/plants.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column nowrap;
+ 
+    .logo {
+      background: #00000061;
+      padding: 5px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      margin-top: 200px;
+      align-items: baseline;
+    }
+    
+  }
+
+  .col-right{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    .intro, .submit {
+      padding: 30px;
+      p{
+        font-size: 20px;
+        font-weight: 400;
+      }
+      p:last-child {
+        margin-bottom: 0;
+      }
+  }
+    .form-wrapper {
+      padding: 30px;
+      box-shadow: 1px 1px 5px 3px #00000021;
+      h3 {
+        margin-top: 0;
+    }
+  }
+  }
+}
+
+button[type=submit] {
+  appearance: none;
+  background: #596D48;
+  border: 2px solid #596D48;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+form input:focus {
+  outline: #2196F3 auto 1px;
+}
+
+form input.red-line {
+  outline: red auto 1px;
+}
+
+form input.green-line {
+  outline: green auto 1px;
+}
+
+form input.red-line + span {
+  opacity: 100%;
+}
+
+form input + span {
+  font-size: 12px;
+  opacity: 0;
+  color: red;
+}
+
+.form-wrapper > div + div {
+  margin-top: 15px;
+}
+
+.input-row {
+  display: flex;
+  gap: 60px;
+  
+}
+
+.input-row div {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3px;
+}
+
+form label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+form input {
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+  padding: 5px;
+  height: 20px;
+}
+
+.logo img {
+  max-width: 300px;
+  width: 100%;
+}
+
+

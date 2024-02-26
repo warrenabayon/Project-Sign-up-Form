@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project: Sign-up Form</title>
+  <link rel="stylesheet" href="./css/css.css">
+</head>
+<body>
+  <section>
+    <div class="col-left">
+      <div class="logo">
+        <img src="./images/ODIN.png" alt="">
+      </div>
+
+    </div>
+    <div class="col-right">
+      <div class="intro">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+        <p>Sign up now to get started.</p>
+      </div>
+      
+      <div class="form-row">
+        
+        <form action="#" method="post">
+          <div class="form-wrapper">
+            <h3>Let's do this!</h3>
+            <div class="input-row">
+              <div>
+                <label for="f_name">First Name</label>
+                <input type="text" id="f_name" name="f_name" >
+              </div>
+              <div><label for="l_name">Last Name</label>
+                <input type="text" id="l_name" name="l_name" >
+              </div>
+            </div>
+            <div class="input-row">
+              <div>
+                <label for="u_email">Email</label>
+                <input type="email" id="u_email" name="u_email" >
+              </div>
+              <div><label for="u_phone">Phone Number</label>
+                <input type="number" id="u_phone" name="u_phone" > 
+              </div>
+            </div>
+            <div class="input-row">
+              <div>
+                <label for="u_pass">Password</label>
+                <input type="password" id="u_pass" name="u_pass" maxlength="15" minlength="3">
+                <span>* password do not match</span>
+              </div>
+              <div><label for="u_cpass">Confirm Password</label>
+                <input type="password" id="u_cpass" name="u_cpass" minlength="8" maxlength="15" >
+                <span> password do not match</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="submit">
+            <button type="submit" id="submit"> Create Account</button>
+            <p>Already have an account? <a href="#">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="./js/js.js"></script>
+</body>
+</html>
