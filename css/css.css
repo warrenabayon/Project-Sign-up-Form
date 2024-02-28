@@ -42,7 +42,7 @@ section {
     .intro, .submit {
       padding: 30px;
       p{
-        font-size: 20px;
+        font-size: 1.3rem;
         font-weight: 400;
       }
       p:last-child {
@@ -83,6 +83,10 @@ form input.green-line {
   outline: green auto 1px;
 }
 
+form input:focus:required {
+  outline: red auto 1px;
+}
+
 form input.red-line + span {
   opacity: 100%;
 }
@@ -100,6 +104,7 @@ form input + span {
 .input-row {
   display: flex;
   gap: 60px;
+  flex-wrap: wrap;
   
 }
 
@@ -128,3 +133,62 @@ form input {
 }
 
 
+
+@media only screen and (max-width: 1024px) {
+  section {
+    flex-flow: column nowrap;
+    
+}
+
+section
+.col-left {
+    width: 100%;
+
+}
+
+
+section
+.col-left
+.logo {
+  margin: 20px 0;
+}
+
+.intro p {
+  padding-top: 0;
+  margin-top: 0;
+  
+}
+
+}
+
+@media only screen and (max-width:767px) {
+  .input-row {
+
+    gap: 10px;
+
+    
+  }
+  
+  
+
+  section
+  .col-right
+  .intro p, .col-right .submit p:last-child {
+    
+    font-size: 1rem;
+
+}
+
+}
+
+
+@media only screen and (max-width: 480px) {
+  .input-row div {
+    width: 100%;
+}
+
+.logo img {
+  max-width: 250px;
+  
+}
+}
